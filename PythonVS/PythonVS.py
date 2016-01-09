@@ -1,20 +1,48 @@
+#these were all taken from here: https://github.com/rougier/numpy-100
+
 #. Import the numpy package under the name ``np`` (★☆☆☆☆) 
+import numpy as np
 
 #. Print the numpy version and the configuration (★☆☆☆☆) 
+#print (np.__version__)
+#np.__config__.show()
 
 #. Create a null vector of size 10 (★☆☆☆☆) 
+#v = np.zeros(10)
+#print v
 
 #. How to get the documentation of the numpy add function from the command line ? (★☆☆☆☆) 
 
 #. Create a null vector of size 10 but the fifth value which is 1 (★☆☆☆☆) 
+#v = np.zeros(10)
+#v[4]=1
+#print v
 
 #. Create a vector with values ranging from 10 to 49 (★☆☆☆☆) 
+#v = np.arange(10,50)
+#print v
 
 #. Reverse a vector (first element becomes last) (★☆☆☆☆) 
+#v = np.arange(11)
+#v = v[::-1]
+#print v
 
 #. Create a 3x3 matrix with values ranging from 0 to 8 (★☆☆☆☆) 
+#a = np.matrix('0 1 2; 3 4 5; 6 7 8')
+#a = np.arange(9).reshape(3,3)
+#print a
 
 #. Find indices of non-zero elements from [1,2,0,0,4,0] (★☆☆☆☆) 
+v = np.array([1,2,0,0,4,0])
+nz_id = np.nonzero(v)
+print ("indices: ", nz_id)
+
+#and the actual values
+print ("values: ", v[nz_id])    # for this to work, v HAS to be a np.array, can't be simply v = [1,2,3,..]
+
+
+#x = np.arange(10,1,-1)
+#x[np.array([3, 3, 1, 8])]
 
 #. Create a 3x3 identity matrix (★☆☆☆☆) 
 
