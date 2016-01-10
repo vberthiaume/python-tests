@@ -40,10 +40,6 @@ print ("indices: ", nz_id)
 #and the actual values
 print ("values: ", v[nz_id])    # for this to work, v HAS to be a np.array, can't be simply v = [1,2,3,..]
 
-
-#x = np.arange(10,1,-1)
-#x[np.array([3, 3, 1, 8])]
-
 #. Create a 3x3 identity matrix (★☆☆☆☆) 
 
 #. Create a 3x3x3 array with random values (★☆☆☆☆) 
